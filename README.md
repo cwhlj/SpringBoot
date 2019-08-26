@@ -2,8 +2,8 @@
 ## Spring Boot+Mybatis+MySql
 
 ### 使用idea上传项目到gitHub
-####打开终端进行项目根目录下键入以下 命令：
-####git remote add origin git@github.com:cwhlj/SpringBoot.git(这里我写的自己的github地址,这里可以改成你自己的github项目)
+#### 打开终端进行项目根目录下键入以下 命令：
+#### git remote add origin git@github.com:cwhlj/SpringBoot.git(这里我写的自己的github地址,这里可以改成你自己的github项目)
 #### git push -u origin master //将本地仓库的东西提交到地址是origin的地址，master分支下
 #### 然后会报错误
 #### 这是因为：
