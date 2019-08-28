@@ -21,4 +21,10 @@ public class UserServiceImpl implements UserService {
     public List<User> queryUserList() {
         return userDao.queryUserList();
     }
+
+    @Override
+    public boolean login(String userName, String password) {
+        User user = userDao.login(userName, password);
+        return user != null;
+    }
 }

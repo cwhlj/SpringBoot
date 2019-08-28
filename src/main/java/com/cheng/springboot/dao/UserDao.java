@@ -2,6 +2,7 @@ package com.cheng.springboot.dao;
 
 import com.cheng.springboot.model.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,5 +14,18 @@ import java.util.List;
 @Mapper
 @Repository
 public interface UserDao {
+    /**
+     * queryUserList
+     *
+     * @return
+     */
     List<User> queryUserList();
+
+    /**
+     * login
+     * @param userName
+     * @param password
+     * @return
+     */
+    User login(@Param("userName") String userName, @Param("password") String password);
 }

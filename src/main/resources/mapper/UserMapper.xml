@@ -10,4 +10,8 @@
     <select id="queryUserList" resultMap="BaseResultMap">
         select * from user
     </select>
+
+    <select id="login" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select * from user where user_name=#{userName} and password=#{password}
+    </select>
 </mapper>

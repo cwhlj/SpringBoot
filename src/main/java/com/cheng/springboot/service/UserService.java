@@ -10,4 +10,6 @@ import java.util.List;
  */
 public interface UserService {
     List<User> queryUserList();
+
+    boolean login(String userName, String password);
 }
