@@ -1,4 +1,4 @@
-package com.cheng.springboot;
+package com.cheng.springboot.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
